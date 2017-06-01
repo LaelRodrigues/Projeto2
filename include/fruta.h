@@ -3,7 +3,7 @@
  * @brief	Definicao da classe Fruta para representar uma fruta
  * @author	Lael Rodrigues(laelrodrigues7@gmail.com)
  * @since	31/05/2017	
- * @data	31/05/2017
+ * @data	01/06/2017
  */
 
 #ifndef FRUTA_H
@@ -28,10 +28,10 @@ class Fruta: public Produto{
 		Fruta();
 
 		/** @brief Retorna o numero do lote */
-		float getNumLote();
+		int getNumLote();
 
 		/** @brief Modifica o numero do lote */
-		void setNumLote(float nl);
+		void setNumLote(int nl);
 
 		/** @brief Retorna a data de producao do lote */
 		string getDataProducao();

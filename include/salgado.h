@@ -3,7 +3,7 @@
  * @brief	Definicao da classe Salgado para representar um salgado
  * @author	Lael Rodrigues(laelrodrigues7@gmail.com)
  * @since	31/05/2017
- * @data	31/05/2017
+ * @data	01/06/2017
  */
 
 #ifndef SALGADO_H
@@ -32,18 +32,18 @@ class Salgado: public Produto {
 		float getQuantSodio();
 
 		/** @brief Modifica a quantidade de sodio em miligramas contido no salgado */
-		void setNumLote(float qd_sodio);
+		void setQuantSodio(float qd_sodio);
 
 		/** @brief Retorna 1 se contem gluten e 0 se nao contem */
 		bool getGluten();
 
-		/** @brief Modifica para contem(1) ou nao contem(0) gluten */
+		/** @brief Modifica para 1 se contem gluten ou para 0 se nao contem  */
 		void setGluten(bool g);
 
 		/** @brief Retorna 1 se contem lactose e 0 se nao contem */
 		bool getLactose();
 
-		/** @brief Modifica para contem(1) ou nao contem(0) lactose */
+		/** @brief Modifica para 1 se contem lactose ou para 0 se nao contem */
 		void setLactose(bool l);
 };
 

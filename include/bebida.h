@@ -3,7 +3,7 @@
  * @brief	Definicao da classe Bebida para representar uma bebida
  * @author	Lael Rodrigues(laelrodrigues7@gmail.com)
  * @since	31/05/2017
- * @data	31/05/2017
+ * @data	01/06/2017
  */
 
 #ifndef BEBIDA_H
@@ -34,10 +34,10 @@ class Bebida: public Produto {
 		/** @brief Modifica o percentual de alcool contido na bebida */
 		void setTeorAlcoolico(float ta);
 
-		/** @brief Retorna a quantidade de acucar em miligramas contida na bebida */
+		/** @brief Retorna a quantidade de acucar em miligramas contido na bebida */
 		float getQuantAcucar();
 
-		/** @brief Modifica a quantidade de acucar em miligramas contida na bebida */
+		/** @brief Modifica a quantidade de acucar em miligramas contida no bebida */
 		void setQuantAcucar(float qd_acucar);
 };
 
