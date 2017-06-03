@@ -3,8 +3,8 @@
  * @brief	Implementacao dos metodos da classe Bebida para
  * 			representar uma bebida
  * @author	Lael Rodriugues (laelrodrigues7@gmail.com) 
- * @since	31/05/2017
- * @date	01/06/2017
+ * @since	01/05/2017
+ * @date	03/06/2017
  */
 
 #include "bebida.h"
@@ -33,28 +33,28 @@ float Bebida::getTeorAlcoolico(){
  */
 void Bebida::setTeorAlcoolico(float ta){
 	if(ta < 0) {
-		cout << "Erro: Valor referente ao percentual de alcool e invalido" << endl;
+		cout << "Erro: Valor referente ao percentual de alcool e invalido." << endl;
 		exit(1);
 	}
-	else {sdf
+	else {
 		teorAlcoolico = ta;
 	}
 }
 
-/** @return Quantidade de acucar em miligramas contida na bebida */
+/** @return Quantidade de acucar em miligramas contido na bebida */
 float Bebida::getQuantAcucar(){
 	return quantAcucar;
 }
 
 /**
  * @details caso o valor referente quantidade de acucar
- *			presenta na bebida seja invalido o programa exibe
+ *			presente na bebida seja invalido o programa exibe
  *			uma messagem de erro e encerra a execucao	 
- * @param qd_acucar Quantidade de acucar em miligramas contida na bebida 
+ * @param qd_acucar Quantidade de acucar em miligramas contido na bebida 
  */
 void Bebida::setQuantAcucar(float qd_acucar){
 	if(qd_acucar < 0.0){
-		cout << "Erro: Valor referente a quantidade de acucar e invalido" << endl;
+		cout << "Erro: Valor referente a quantidade de acucar e invalido." << endl;
 		exit(1);
 	}
 	else {

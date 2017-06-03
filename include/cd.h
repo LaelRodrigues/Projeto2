@@ -31,7 +31,7 @@ class Cd: public Produto {
 		/** @brief Construtor padrao */
 		Cd();
 
-		/** @brief Retorna o estilo musical*/
+		/** @brief Retorna o estilo musical */
 		string getEstilo();
 
 		/** @brief Modifica o estilo musical */

@@ -44,11 +44,11 @@ class Dvd: public Produto {
 		/** @brief Modifica o genero do dvd */
 		void setGenero(string g);
 
-		/** @brief Retorna a duracao total do dvd */
-		string getDuracaoTotal();
+		/** @brief Retorna a duracao total do dvd em minutos */
+		int getDuracaoTotal();
 
-		/** @brief Modifica a duracao total do dvd */
-		void setDuracaoTotal(string dt);
+		/** @brief Modifica a duracao total do dvd em minutos */
+		void setDuracaoTotal(int dt);
 };
 
 #endif

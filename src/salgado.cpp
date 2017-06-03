@@ -19,6 +19,7 @@ using std::cout;
 Salgado::Salgado() {
 	//construtor padrao
 }
+
 /** 
  * @return Quantidade de sodio em miligramas contido no salgado 
  */
@@ -49,13 +50,13 @@ bool Salgado::getGluten(){
 
 /**
  * @details Caso o valor que define se o salgado contem ou nao
- *			gluten seja invalido, o programa exibe uma mensagem 
+ *			gluten seja invalido, o programa exibe uma menssagem 
  *			de erro e encerra a execucao 
  * @param g Define se o salgado contem gluten ou nao 
  */
 void Salgado::setGluten(bool g){
 	if(g < 0 || g > 1) {
-		cout << "Erro: Valor que define se o salgado tem ou nao gluten e invalido" << endl;
+		cout << "Erro: Valor que define se o salgado tem ou nao gluten e invalido." << endl;
 		exit(1);
 	}
 	else {
@@ -70,13 +71,13 @@ bool Salgado::getLactose(){
 
 /**
  * @details Caso o valor que define se o salgado contem ou nao
- *			lactose seja invalido, o programa exibe uma mensagem 
+ *			lactose seja invalido, o programa exibe uma menssagem 
  *			de erro e encerra a execucao 
  * @param l Define se o salgado contem lactose ou nao 
  */
 void Salgado::setLactose(bool l){
 	if(l < 0 || l > 1) {
-		cout << "Erro: Valor que define se o salgado tem ou nao lactose e invalido" << endl;
+		cout << "Erro: Valor que define se o salgado tem ou nao lactose e invalido." << endl;
 		exit(1);
 	}
 	else {

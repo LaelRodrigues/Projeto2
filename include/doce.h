@@ -32,18 +32,18 @@ class Doce: public Produto {
 		float getQuantAcucar();
 
 		/** @brief Modifica a quantidade de acucar em miligramas contido no doce */
-		void setQuantAcucar(float qd_Acucar);
+		void setQuantAcucar(float qd_acucar);
 
 		/** @brief Retorna 1 se contem gluten e 0 se nao contem */
 		bool getGluten();
 
-		/** @brief Modifica para contem(1) ou nao contem(0) gluten */
+		/** @brief Modifica para 1 se contem gluten ou para 0 se nao contem */
 		void setGluten(bool g);
 
 		/** @brief Retorna 1 se contem lactose e 0 se nao contem */
 		bool getLactose();
 
-		/** @brief Modifica para contem(1) ou nao contem(0) lactose */
+		/** @brief Modifica para 1 se contem lactose ou para 0 se nao contem */
 		void setLactose(bool l);
 };
 

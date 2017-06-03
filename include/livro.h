@@ -26,7 +26,7 @@ class Livro: public Produto {
 		string titulo;			/**< Titulo do livro */
 		string autor;			/**< Autor do livro */
 		string genero;			/**< Genero do livro */
-		string anoPublicacao;	/**< Ano de publicacao */
+		int anoPublicacao;	/**< Ano de publicacao */
 
 	public:
 
@@ -52,10 +52,10 @@ class Livro: public Produto {
 		void setGenero(string g);
 
 		/** @brief Retorna o ano de publicacao do livro */
-		string getAnoPublicacao();
+		int getAnoPublicacao();
 
 		/** @brief Modifica o ano de publicacao do livro */
-		void setAnoPublicacao(string ap);
+		void setAnoPublicacao(int ap);
 	
 };
 

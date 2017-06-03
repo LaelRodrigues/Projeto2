@@ -37,7 +37,7 @@ class Salgado: public Produto {
 		/** @brief Retorna 1 se contem gluten e 0 se nao contem */
 		bool getGluten();
 
-		/** @brief Modifica para 1 se contem gluten ou para 0 se nao contem  */
+		/** @brief Modifica para 1 se contem gluten ou para 0 se nao contem */
 		void setGluten(bool g);
 
 		/** @brief Retorna 1 se contem lactose e 0 se nao contem */
