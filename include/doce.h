@@ -10,6 +10,7 @@
 #define DOCE_H
 
 #include "produto.h"
+#include "perecivel.h"
 
 /** 
  * @class 	Doce doce.h
@@ -18,7 +19,7 @@
  *			gluten e lactose
  */
 
-class Doce: public Produto {
+class Doce: public Produto, Perecivel {
 	protected:
 		float quantAcucar;		/**< Quantidade de acucar contido no doce */
 		bool gluten;			/**< gluten */
@@ -29,7 +30,7 @@ class Doce: public Produto {
 		Doce();
 
 		/**@brief Construtor parametrizado */
-		Doce(int _codigo, string _descricao, float _preco, int _quantEstoque, float _quantAcucar, bool _gluten, bool _lactose);
+		Doce(int _codigo, string _descricao, float _preco, int _quantEstoque, string _dataValidade, float _quantAcucar, bool _gluten, bool _lactose);
 
 		/** @brief Retorna a quantidade de acucar em miligramas contido no doce */
 		float getQuantAcucar();

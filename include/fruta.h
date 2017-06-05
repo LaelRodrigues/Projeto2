@@ -10,6 +10,7 @@
 #define FRUTA_H
 
 #include "produto.h"
+#include "perecivel.h"
 
 /** 
  * @class 	Fruta fruta.h
@@ -18,7 +19,8 @@
  *			producao do lote   
  */
 
-class Fruta: public Produto{
+class Fruta: public Produto, Perecivel{
+	
 	protected:
 		int numLote;			/**< Numero do lote */
 		string dataProducao;	/**< data de producao do lote */
@@ -28,7 +30,7 @@ class Fruta: public Produto{
 		Fruta();
 
 		/** @brief Construtor parametrizado */
-		Fruta(int _codigo, string _descricao, float _preco, int _quantEstoque, int _numLote, string _dataProducao);
+		Fruta(int _codigo, string _descricao, float _preco, int _quantEstoque, string _dataValidade, int _numLote, string _dataProducao);
 
 		/** @brief Retorna o numero do lote */
 		int getNumLote();

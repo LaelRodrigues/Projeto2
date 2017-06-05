@@ -25,16 +25,18 @@ Fruta::Fruta() {
  * @param _descricao Descricao do produto 
  * @param _preco Preco do produto
  * @param _quantEstoque Quantidade em estoque
+ * @param _dataValidade Data de validade do produto
  * @param _numLote Numero do lote
  * @param _dataProducao Data de producao do lote
  */
 Fruta::Fruta(int _codigo, string _descricao, float _preco, int _quantEstoque, 
-	int _numLote, string _dataProducao){
+		string _dataValidade, int _numLote, string _dataProducao){
 
 	setCodigo(_codigo); 
 	setDescricao(_descricao);
 	setPreco(_preco);
 	setQuantEstoque(_quantEstoque);
+	setDataValidade(_dataValidade);
 	setNumLote(_numLote);
 	setDataProducao(_dataProducao);
 }

@@ -27,17 +27,19 @@ Salgado::Salgado() {
  * @param _descricao Descricao do produto 
  * @param _preco Preco do produto
  * @param _quantEstoque Quantidade em estoque
+ * @param _dataValidade Data de validade do produto
  * @param _quantSodio Quantidade de sodio contido no salgado
  * @param _gluten Define se o salgado contem gluten ou nao
  * @param _lactose Define se o salgado contem lactose ou nao
  */
 Salgado::Salgado(int _codigo, string _descricao, float _preco, int _quantEstoque, 
-		float _quantSodio, bool _gluten, bool _lactose){
+		string _dataValidade, float _quantSodio, bool _gluten, bool _lactose){
 	
 	setCodigo(_codigo); 
 	setDescricao(_descricao);
 	setPreco(_preco);
 	setQuantEstoque(_quantEstoque);
+	setDataValidade(_dataValidade);
 	setQuantSodio(_quantSodio);
 	setGluten(_gluten);
 	setLactose(_lactose);

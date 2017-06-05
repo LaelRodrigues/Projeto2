@@ -1,15 +1,16 @@
 /**
  * @file	perecivel.h
- * @brief	Definicao da classe Perecivel para representar uma produto perecivel
+ * @brief	Definicao da classe Perecivel para representar um produto perecivel
  * @author	Lael Rodrigues(laelrodrigues7@gmail.com)
  * @since	31/05/2017
- * @data	31/05/2017
+ * @data	05/06/2017
  */
 
 #ifndef PERECIVEL_H
 #define PERECIVEL_H
 
-#include "produto.h"
+#include <string>
+using std::string;
 
 /** 
  * @class 	Perecivel perecivel.h
@@ -18,7 +19,7 @@
  *			data de validade
  */
 
-class Perecivel: public Produto {
+class Perecivel {
 	
 	protected:
 		string dataValidade; /**< Data de validade do produto */
@@ -27,6 +28,9 @@ class Perecivel: public Produto {
 
 		/** @brief Construtor padrao */
 		Perecivel();
+
+		/** @brief Construtor parametrizado */
+		Perecivel(string _dataValidade);
 
 		/** @brief Retorna A data de validade do produto */
 		string getDataValidade();

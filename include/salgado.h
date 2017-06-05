@@ -10,6 +10,7 @@
 #define SALGADO_H
 
 #include "produto.h"
+#include "perecivel.h"
 
 /** 
  * @class 	Salgado salgado.h
@@ -18,7 +19,7 @@
  *			gluten e lactose
  */
 
-class Salgado: public Produto {
+class Salgado: public Produto, Perecivel {
 	protected:
 		float quantSodio;		/**< Quantidade de sodio contido no salgado */
 		bool gluten;			/**< gluten */
@@ -29,7 +30,7 @@ class Salgado: public Produto {
 		Salgado();
 
 		/**@brief Construtor parametrizado */
-		Salgado(int _codigo, string _descricao, float _preco, int _quantEstoque, float _quantSodio, bool _gluten, bool _lactose);
+		Salgado(int _codigo, string _descricao, float _preco, int _quantEstoque, string _dataValidade, float _quantSodio, bool _gluten, bool _lactose);
 
 		/** @brief Retorna a quantidade de sodio em miligramas contido no salgado */
 		float getQuantSodio();

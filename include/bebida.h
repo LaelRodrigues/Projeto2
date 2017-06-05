@@ -10,6 +10,7 @@
 #define BEBIDA_H
 
 #include "produto.h"
+#include "perecivel.h"
 
 /** 
  * @class 	Bebida bebida.h
@@ -18,7 +19,7 @@
  *			e quantidade de acucar
  */
 
-class Bebida: public Produto {
+class Bebida: public Produto, Perecivel {
 	
 	protected:
 		float teorAlcoolico;	/**< percentual de alcool contido na bebida */
@@ -29,7 +30,7 @@ class Bebida: public Produto {
 		Bebida();
 
 		/** @brief Construtor parametrizado */
-		Bebida(int _codigo, string _descricao, float _preco, int _quantEstoque, float _teorAlcoolico, float _quantAcucar);
+		Bebida(int _codigo, string _descricao, float _preco, int _quantEstoque, string _dataValidade, float _teorAlcoolico, float _quantAcucar);
 
 		/** @brief Retorna o percentual de alcool contido na bebida */
 		float getTeorAlcoolico();

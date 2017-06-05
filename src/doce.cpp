@@ -25,18 +25,20 @@ Doce::Doce() {
  * @param _descricao Descricao do produto 
  * @param _preco Preco do produto
  * @param _quantEstoque Quantidade em estoque
+ * @param _dataValidade Data de validade do produto
  * @param _quantAcucar Quantidade de acucar contido no doce
  * @param _gluten Define se o doce contem gluten ou nao
  * @param _lactose Define se o doce contem lactose ou nao
  */
 Doce::Doce(int _codigo, string _descricao, float _preco, int _quantEstoque, 
-		float _quantAcucar, bool _gluten, bool _lactose){
+		string _dataValidade, float _quantAcucar, bool _gluten, bool _lactose){
 	
 	setCodigo(_codigo); 
 	setDescricao(_descricao);
 	setPreco(_preco);
 	setQuantEstoque(_quantEstoque);
-	setQuantSodio(_quantAcucar);
+	setDataValidade(_dataValidade);
+	setQuantAcucar(_quantAcucar);
 	setGluten(_gluten);
 	setLactose(_lactose);
 }

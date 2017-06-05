@@ -4,7 +4,7 @@
  * 			representar um produto perecivel 
  * @author	Lael Rodriugues (laelrodrigues7@gmail.com) 
  * @since	03/06/2017
- * @date	03/06/2017
+ * @date	05/06/2017
  */
 
 #include "perecivel.h"
@@ -18,6 +18,11 @@ using std::cout;
 
 Perecivel::Perecivel() {
 	//construtor padrao
+}
+
+/** @param _dataValidade Data de validade do produto */
+Perecivel::Perecivel(string _dataValidade){
+	setDataValidade(_dataValidade);
 }
 
 /** @return Data de validade do produto */
