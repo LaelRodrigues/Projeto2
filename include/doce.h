@@ -28,6 +28,9 @@ class Doce: public Produto {
 		/** @brief Construtor padrao */
 		Doce();
 
+		/**@brief Construtor parametrizado */
+		Doce(int _codigo, string _descricao, float _preco, int _quantEstoque, float _quantAcucar, bool _gluten, bool _lactose);
+
 		/** @brief Retorna a quantidade de acucar em miligramas contido no doce */
 		float getQuantAcucar();
 

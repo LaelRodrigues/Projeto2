@@ -20,6 +20,28 @@ Cd::Cd() {
 	//construtor padrao
 }
 
+/**
+ * @param _codigo Codigo do produto
+ * @param _descricao Descricao do produto 
+ * @param _preco Preco do produto
+ * @param _quantEstoque Quantidade em estoque
+ * @param _estilo Estilo musical
+ * @param _artista Nome do artista 
+ * @param _nomeAlbum Nome do album 
+ */
+Cd::Cd(int _codigo, string _descricao, float _preco, int _quantEstoque, 
+			string _estilo, string _artista, string _nomeAlbum){
+
+	setCodigo(_codigo); 
+	setDescricao(_descricao);
+	setPreco(_preco);
+	setQuantEstoque(_quantEstoque);
+	setEstilo(_estilo);
+	setArtista(_artista);
+	setNomeAlbum(_nomeAlbum);
+
+}
+
 /** @return Estilo musical */
 string Cd::getEstilo(){
 	return estilo;
@@ -45,7 +67,7 @@ string Cd::getNomeAlbum(){
 	return nomeAlbum;
 }
 
-/** @param na Nome do album*/
+/** @param na Nome do album */
 void Cd::setNomeAlbum(string na){
 	nomeAlbum = na;
 }

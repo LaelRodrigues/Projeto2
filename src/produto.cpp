@@ -20,6 +20,20 @@ Produto::Produto() {
 	//Construtor padrao
 }
 
+
+/**
+ * @param _codigo Codigo do produto
+ * @param _descricao Descricao do produto 
+ * @param _preco Preco do produto
+ * @param _quantEstoque Quantidade em estoque
+ */
+Produto::Produto(int _codigo, string _descricao, float _preco, int _quantEstoque) {
+	setCodigo(_codigo); 
+	setDescricao(_descricao);
+	setPreco(_preco);
+	setQuantEstoque(_quantEstoque);
+}
+
 /** @return Codigo do produto */
 int Produto::getCodigo(){
 	return codigo;

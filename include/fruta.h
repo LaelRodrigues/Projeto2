@@ -27,6 +27,9 @@ class Fruta: public Produto{
 		/** @brief Construtor padrao */
 		Fruta();
 
+		/** @brief Construtor parametrizado */
+		Fruta(int _codigo, string _descricao, float _preco, int _quantEstoque, int _numLote, string _dataProducao);
+
 		/** @brief Retorna o numero do lote */
 		int getNumLote();
 

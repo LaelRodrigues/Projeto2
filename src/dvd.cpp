@@ -20,6 +20,27 @@ Dvd::Dvd() {
 	//construtor padrao
 }
 
+/**
+ * @param _codigo Codigo do produto
+ * @param _descricao Descricao do produto 
+ * @param _preco Preco do produto
+ * @param _quantEstoque Quantidade em estoque
+ * @param _titulo Titulo do dvd
+ * @param _genero Genero do dvd 
+ * @param _duracaoTotal Duracao total do dvd em minutos 
+ */
+Dvd::Dvd(int _codigo, string _descricao, float _preco, int _quantEstoque, 
+		string _titulo, string _genero, int _duracaoTotal){
+	
+	setCodigo(_codigo); 
+	setDescricao(_descricao);
+	setPreco(_preco);
+	setQuantEstoque(_quantEstoque);
+	setTitulo(_titulo);
+	setDescricao(_descricao);
+	setDuracaoTotal(_duracaoTotal);
+
+}
 /** @return Titulo do dvd */
 string Dvd::getTitulo(){
 	return titulo;

@@ -33,6 +33,9 @@ class Livro: public Produto {
 		/** @brief Construtor padrao */
 		Livro();
 
+		/**@brief Construtor parametrizado */
+		Livro(int _codigo, string _descricao, float _preco, int _quantEstoque, string _titulo, string _autor, string _genero, int _anoPublicacao);
+
 		/** @brief Retorna o titulo do livro  */
 		string getTitulo();
 

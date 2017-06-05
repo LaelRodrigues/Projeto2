@@ -32,6 +32,9 @@ class Dvd: public Produto {
 		/** @brief Construtor padrao */
 		Dvd();
 
+		/**@brief Construtor parametrizado */
+		Dvd(int _codigo, string _descricao, float _preco, int _quantEstoque, string _titulo, string _genero, int _duracaoTotal);
+
 		/** @brief Retorna o titulo do dvd */
 		string getTitulo();
 

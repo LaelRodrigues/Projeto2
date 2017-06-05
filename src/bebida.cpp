@@ -20,6 +20,26 @@ Bebida::Bebida() {
 	//Construtor padrao
 }
 
+/**
+ * @param _codigo Codigo do produto
+ * @param _descricao Descricao do produto 
+ * @param _preco Preco do produto
+ * @param _quantEstoque Quantidade em estoque
+ * @param _teorAlcoolico Percentual de alcool contido na bebida
+ * @param _quantAcucar Quantidade de acucar contido na bebida
+ */
+Bebida::Bebida(int _codigo, string _descricao, float _preco, int _quantEstoque, 
+		float _teorAlcoolico, float _quantAcucar) {
+
+	setCodigo(_codigo); 
+	setDescricao(_descricao);
+	setPreco(_preco);
+	setQuantEstoque(_quantEstoque);
+	setTeorAlcoolico(_teorAlcoolico);
+	setQuantAcucar(_quantAcucar);
+}
+
+
 /** @return Percentual de alcool contido na bebida */
 float Bebida::getTeorAlcoolico(){
 	return teorAlcoolico;

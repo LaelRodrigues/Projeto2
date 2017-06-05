@@ -28,6 +28,9 @@ class Salgado: public Produto {
 		/** @brief Construtor padrao */
 		Salgado();
 
+		/**@brief Construtor parametrizado */
+		Salgado(int _codigo, string _descricao, float _preco, int _quantEstoque, float _quantSodio, bool _gluten, bool _lactose);
+
 		/** @brief Retorna a quantidade de sodio em miligramas contido no salgado */
 		float getQuantSodio();
 

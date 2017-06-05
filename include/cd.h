@@ -31,6 +31,9 @@ class Cd: public Produto {
 		/** @brief Construtor padrao */
 		Cd();
 
+		/** @brief Construtor parametrizado */
+		Cd(int _codigo, string _descricao, float _preco, int _quantEstoque, string _estilo, string _artista, string _nomeAlbum);
+
 		/** @brief Retorna o estilo musical */
 		string getEstilo();
 

@@ -28,6 +28,9 @@ class Bebida: public Produto {
 		/** @brief Construtor padrao */
 		Bebida();
 
+		/** @brief Construtor parametrizado */
+		Bebida(int _codigo, string _descricao, float _preco, int _quantEstoque, float _teorAlcoolico, float _quantAcucar);
+
 		/** @brief Retorna o percentual de alcool contido na bebida */
 		float getTeorAlcoolico();
 

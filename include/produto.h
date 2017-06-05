@@ -31,6 +31,9 @@ class Produto {
 		/** @brief Construtor padrao */
 		Produto();
 
+		/**@brief Construtor parametrizado */
+		Produto(int _codigo, string _descricao, float _preco, int _quantEstoque);
+
 		/** @brief Retorna o codigo do produto */
 		int getCodigo();
 

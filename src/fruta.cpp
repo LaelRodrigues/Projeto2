@@ -20,6 +20,25 @@ Fruta::Fruta() {
 	//construtor padrao
 }
 
+/**
+ * @param _codigo Codigo do produto
+ * @param _descricao Descricao do produto 
+ * @param _preco Preco do produto
+ * @param _quantEstoque Quantidade em estoque
+ * @param _numLote Numero do lote
+ * @param _dataProducao Data de producao do lote
+ */
+Fruta::Fruta(int _codigo, string _descricao, float _preco, int _quantEstoque, 
+	int _numLote, string _dataProducao){
+
+	setCodigo(_codigo); 
+	setDescricao(_descricao);
+	setPreco(_preco);
+	setQuantEstoque(_quantEstoque);
+	setNumLote(_numLote);
+	setDataProducao(_dataProducao);
+}
+
 /** @return Numero do lote */
 int Fruta::getNumLote(){
 	return numLote;
@@ -28,7 +47,7 @@ int Fruta::getNumLote(){
 /**
  * @details caso o valor referente ao numero do lote seja invalido,
  *			programa exibe uma messagem de erro e encerra a execucao	 
- * @param Numero do lote 
+ * @param nl Numero do lote 
  */
 void Fruta::setNumLote(int nl){
 	if(nl <= 0) {
